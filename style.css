@@ -1,0 +1,171 @@
+
+:root {
+	--aside-width: 40px;
+	--list-width: 300px;
+}
+
+body {
+	position: relative;
+	margin: 0;
+	min-height: 100vh;
+}
+/* 
+aside {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 20px;
+	box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.25);
+
+}
+
+@media (min-width: 960px) {
+	aside {
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: var(--aside-width);
+		box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.25);
+	}
+}
+
+
+aside .main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	margin-top: 20px;
+}
+
+.main-menu {
+	margin: 20px;
+	width: 15px;
+}
+
+@media (min-width: 960px) {
+	.main-menu {
+		margin: 20px;
+		width: 30px;
+	}
+}
+
+.main-menu:hover {
+	cursor: pointer;
+} */
+
+.full {
+	display: flex;
+	justify-content: space-between;
+
+
+	position: fixed;
+	top: 0;
+	left: 380px;
+	bottom: 0;
+	width: calc(100% - 100px - 350px);
+}
+
+.full-img-wrap {
+	position: relative;
+	padding-top: 56.25%; /* чтобы фото уменьшалось равномерно */
+	width: 100%;
+
+}
+
+#full-img {
+	max-width: 100%;
+	
+	position: absolute; /* и потом это к уменьшению фото */
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+img.edit {
+	position: absolute;	
+
+	top: 2%;
+	right: 0%;
+
+}
+
+.left,
+.right {
+	padding: 0;
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+
+	outline: none;
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(0,0,0, 0);
+	
+	transition: .2s;
+}
+
+.left {
+	margin-right: 30px;
+}
+
+.right {
+	margin-left: 30px;
+}
+
+.left:hover,
+.right:hover {
+	cursor: pointer;
+	transform: scale(1.5);
+}
+
+
+.list-wrap {
+
+	margin: 0 20px 20px 0;
+	
+}
+
+.list {
+	width: 100px;
+	margin-top: 20px;
+	display: none;
+	
+}
+
+@media (min-width: 960px) {
+	.list {
+		display: flex;
+		flex-direction: column;
+		width: 255px;
+	}
+}
+
+.list img {
+	max-width: 100%;
+	margin-bottom: 15px;
+	filter: grayscale(100%); /* делает фото в чб */
+	opacity: .5; /* прозрачность */
+	max-width: 100%;
+
+	transition: .2s;
+
+}
+
+.list img:hover {
+	cursor: pointer;
+	box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.35);
+	opacity: 1;
+	filter: grayscale(0);
+}
+
+.list img.active {
+	filter: grayscale(0);
+	opacity: 1;
+	box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.35);
+} 
+
+
