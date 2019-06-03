@@ -51,15 +51,18 @@ let init = () => {
 	right.addEventListener('click', next)
 	
 	let left = document.querySelector('.left')
-	
-	left.addEventListener('click', function () { // back preview
+
+	let backwards = () => { 
 		n-- 
 		n = n % photos.length
 		if (n < 0) {
 			n = photos.length - 1
 		}
 		set()
-	})
+	}
+	
+	left.addEventListener('click', backwards)  // back preview
+		
 	
 	//Focus stays on selected photo
 	
@@ -67,8 +70,14 @@ let init = () => {
 	
 	document.addEventListener('keydown', function(e) {
 		e.keyCode === 39 && next()
-		// e.keyCode === 37 && prev()
+	
+	})
+	
+	document.addEventListener('keydown', function(e) {
+		e.keyCode === 37 && backwards()
 	})
 }
+
+
 
 export default init
