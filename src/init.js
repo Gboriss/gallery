@@ -81,7 +81,6 @@ let init = () => {
 		e.keyCode === 38 && prev()
 	})
 
-
 }
 
 
