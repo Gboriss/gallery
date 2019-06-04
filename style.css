@@ -86,7 +86,8 @@ aside .main {
 }
 
 img.edit {
-	position: absolute;	
+	position: absolute;
+	cursor: pointer;	
 
 	top: 2%;
 	right: 0%;
@@ -155,6 +156,10 @@ img.edit {
 
 }
 
+.list img:focus {
+	outline: none;
+}
+
 .list img:hover {
 	cursor: pointer;
 	box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.35);
@@ -162,7 +167,8 @@ img.edit {
 	filter: grayscale(0);
 }
 
-.list img.active {
+.list img.active,
+.list img:focus {
 	filter: grayscale(0);
 	opacity: 1;
 	box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.35);

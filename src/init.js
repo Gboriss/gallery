@@ -3,11 +3,19 @@ import photos from './data'
 let init = () => {
 
 	let list = document.querySelector('.list')
+
 	
+	// creating list of photos
 	let imgNodes = []
-	
+
 	for (let i = 0; i < photos.length; i++) { // Display a list of photos
 		let img = document.createElement('img')
+
+		img.tabIndex = '0'
+		img.onfocus = () => {
+			n = i
+			set()
+		}
 	
 		imgNodes.push(img)
 	
@@ -32,7 +40,7 @@ let init = () => {
 		}
 	
 		imgNodes[n].classList.add('active')
-		
+		imgNodes[n].focus()
 	}
 	
 	
@@ -86,7 +94,5 @@ let init = () => {
 	})
 
 }
-
-
 
 export default init

@@ -1,9 +1,12 @@
 let photos = [
-	require('../gal/STAR_WARS_sci_fi_futuristic_artwork_disney_1600x1200.jpg'), 
-	require('../gal/minimalistic_artwork_vector_art_2560x1440.jpg'),
-	require('../gal/Skyline_new_york_city_1920x1200.jpg'), 
-	require('../gal/vector_digital_art_1600x1200.jpg'),
-	require('../gal/Threadless_cart_fun_art_1920x1200.jpg'),
+	require('../gal/1.jpg'), 
+	require('../gal/2.jpg'),
+	require('../gal/3.jpg'), 
+	require('../gal/4.jpg'),
+	require('../gal/5.jpg'),
+	require('../gal/6.jpg'),
+	require('../gal/7.jpg'),
+	require('../gal/8.jpg'),
 ]
 
 export default photos
