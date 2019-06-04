@@ -81,6 +81,10 @@ let init = () => {
 		e.keyCode === 38 && prev()
 	})
 
+	document.addEventListener('keydown', function(e) {
+		e.keyCode === 40 && next()
+	})
+
 }
 
 
