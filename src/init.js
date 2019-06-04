@@ -52,7 +52,7 @@ let init = () => {
 	
 	let left = document.querySelector('.left')
 
-	let backwards = () => { 
+	let prev = () => { 
 		n-- 
 		n = n % photos.length
 		if (n < 0) {
@@ -61,7 +61,7 @@ let init = () => {
 		set()
 	}
 	
-	left.addEventListener('click', backwards)  // back preview
+	left.addEventListener('click', prev)  // back preview
 		
 	
 	//Focus stays on selected photo
@@ -72,10 +72,16 @@ let init = () => {
 		e.keyCode === 39 && next()
 	
 	})
-	
+
 	document.addEventListener('keydown', function(e) {
-		e.keyCode === 37 && backwards()
+		e.keyCode === 37 && prev()
 	})
+
+	document.addEventListener('keydown', function(e) {
+		e.keyCode === 38 && prev()
+	})
+
+
 }
 
 
