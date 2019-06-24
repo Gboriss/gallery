@@ -1,9 +1,9 @@
 import photos from './data'
 
+
 let init = () => {
 
 	let list = document.querySelector('.list')
-
 	
 	// creating list of photos
 	let imgNodes = []
@@ -27,17 +27,20 @@ let init = () => {
 			set()
 		})
 	}
-	
-	console.log(imgNodes);
+
+
 	let full = document.querySelector('.full')
 	let imgBig = document.getElementById('full-img')
+	let imgShow = document.getElementById('img-show')
 	
 	let set = () => {
-		imgBig.src = photos[n]
+		imgBig.src = photos[n] // big photo add gallery
+		imgShow.src = photos[n] //add a photo to right menu 
 	
 		for (let i = 0; i < imgNodes.length; i++) {
 			imgNodes[i].classList.remove('active')
 		}
+
 	
 		imgNodes[n].classList.add('active')
 		imgNodes[n].focus()
@@ -49,6 +52,8 @@ let init = () => {
 	
 	set()
 	// full.appendChild(imgBig) //
+
+	
 	
 	let next = () => {
 		n++ 
