@@ -42,7 +42,6 @@ let init = () => {
 			imgNodes[i].classList.remove('active')
 		}
 		
-		// filters.src = photos[n]
 	
 		imgNodes[n].classList.add('active')
 		imgNodes[n].focus()
