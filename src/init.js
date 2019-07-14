@@ -31,12 +31,12 @@ let init = () => {
 
 	let full = document.querySelector('.full')
 	let imgBig = document.getElementById('full-img')
-	let imgShow = document.getElementById('img-show')
+	// let imgShow = document.getElementById('img-show')
 	let filters = document.getElementById('filters')
 	
 	let set = () => {
 		imgBig.src = photos[n] // big photo add gallery
-		imgShow.src = photos[n] //add a photo to right menu 
+		// imgShow.src = photos[n] //add a photo to right menu 
 		
 		for (let i = 0; i < imgNodes.length; i++) {
 			imgNodes[i].classList.remove('active')
