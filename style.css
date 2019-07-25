@@ -22,7 +22,8 @@ img {
 		position: fixed;
 		height: 100vh;	
 
-		width: 1400px;
+		max-width: 1400px;
+		width: 100%;
 		padding-left: 390px;
 	}
 }
@@ -86,6 +87,12 @@ img {
 
 .list img:last-child {
 	padding-right: 20px;
+}
+
+@media (min-width: 960px) {
+	.list img:last-child {
+		padding-right: 0;
+	}
 }
 
 .list img:focus {
