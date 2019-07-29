@@ -17,6 +17,11 @@ img {
 	max-width: 200px;
 }
 
+/* :root {
+	--aside-width: 40px;
+	--list-width: 300px;
+} */
+
 .full {
 	display: flex;
 	justify-content: center;
