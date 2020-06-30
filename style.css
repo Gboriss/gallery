@@ -56,8 +56,9 @@ img {
 .list {
 	display: flex;
 	flex-wrap: nowrap;
-	height: 12vh;
+	align-items: center;
 
+	height: 12vh;
 	margin-left: 10px;
     margin-top: 10px;
 	margin-bottom: 10px;
@@ -135,7 +136,7 @@ img {
 
 .list-wrap {
     
-	overflow: scroll;
+	overflow: auto;
 }
 
 @media (min-width: 960px) {
