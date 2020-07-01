@@ -1,0 +1,5 @@
+# GALLERY
+
+![gallery screenshot](https://i.ibb.co/fDsML80/demo.png)
+
+[DEMO](https://nextgtrgod.github.io/gallery-static)
