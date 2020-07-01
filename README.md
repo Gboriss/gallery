@@ -1,5 +1,5 @@
 # GALLERY
 
-![gallery screenshot](https://i.ibb.co/fDsML80/demo.png)
+[DEMO](gboriss.github.io/gallery/)
 
-[DEMO](https://nextgtrgod.github.io/gallery-static)
+![gallery screenshot](https://i.ibb.co/fDsML80/demo.png)
